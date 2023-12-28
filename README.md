@@ -1,6 +1,8 @@
 # Pyxley
 
-The Pyxley python library makes use of the [pyxleyJS](https://github.com/stitchfix/pyxleyJS) React components to create Flask-based web applications. Through the use of the PyReact library, we can use Jinja templating to construct and transform a single React component. The specific UI components are passed as props to the parent component. A simpler interface is provide through the use of specific wrappers for each of the component types.
+The Pyxley python library makes use of the [pyxleyJS](https://github.com/stitchfix/pyxleyJS) React components to create Flask-based web applications. Through the use of the PyReact library, we can use Jinja templating to construct and transform a single React component. The specific UI components are passed as props to the parent component. A simpler interface is provided through the use of specific wrappers for each of the component types.
+
+<img src="http://multithreaded.stitchfix.com/assets/images/blog/pyxley_examples_grid.png">
 
 An example of the Jinja template for a single React component is presented below.
 ```python
@@ -17,6 +19,16 @@ An example of the Jinja template for a single React component is presented below
 ```
 
 By constructing the template in this way, the developer can easily integrate a custom React component. The only requirements are the props, elementId, and location of the React component.
+
+## Documentation and Testing
+### Documentation
+Available at [readthedocs](http://pyxley.readthedocs.org/)
+
+### Testing
+Coming Soon!
+
+## Python versions
+Currently supporting Python 2 and 3.
 
 ## Installation
 Install via pip
@@ -50,5 +62,6 @@ The UILayout class is designed to integrate the filters and charts with the Flas
 
 ## Pandas Integration
 This library is built with the pandas dataframe in mind. That is, we expect the data to be some sort of structured data that’s easy to filter and easy to plot. Each Javascript charting library has it’s own expected format for the data which makes integration with python challenging. Included in this library are several helper functions that format the data in the way the Javascript libraries are expecting.
+
 
 

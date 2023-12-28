@@ -1,4 +1,4 @@
-import filters
+from . import filters
 
 Filter = filters.Filter
 DownloadButton = filters.DownloadButton
@@ -7,4 +7,4 @@ SliderInput = filters.SliderInput
 SelectButton = filters.SelectButton
 ApiButton = filters.ApiButton
 DynamicTextInput = filters.DynamicTextInput
-
+ReactSelect = filters.ReactSelect
